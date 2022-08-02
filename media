@@ -1,0 +1,15 @@
+aluno = input('Informe o nome do aluno: ')
+qtd_notas = int(input('Quantas notas deseja inserir? '))
+contador = 1
+soma = 0.0
+
+while contador <= qtd_notas:
+    print(contador, 'ª nota: ')
+    nota = float (input())
+    soma += nota
+    contador +=1
+
+print('')
+print('#'*30)
+print(f'A média do aluno {aluno} é {soma / qtd_notas}')
+print('#'*30)
